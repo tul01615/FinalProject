@@ -63,14 +63,11 @@
                         <p>The problem at hand when creating these maps was to describe the spatial distribution of the density of homicides by police district and compare this spatial distribution to Airbnb listings and prices in Chicago. In order to accomplish this, joins had to be created to merge standalone data with spatial data. The data also had to be summarized to determine the frequency needed to map density. Using the area and the frequency, the density for both homicides and Airbnb's can be calculated separately. The maps show that not many Airbnb's are in areas within high-density homicide districts.</p>
                         <h2 class="section-heading">Poisoned Water in Flint, Michigan</h2>
                         <img src="Flint, Michigan.jpg" style="max-width: 100%;" alt="Description of the image">
-                        <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.</p>
-                        <p>Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.</p>
-                        <p>As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore, and this is exploration at its greatest.</p>
-                        <p>
-                            Placeholder text by
-                            <a href="http://spaceipsum.com/">Space Ipsum</a>
-                            &middot; Images by
-                            <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>
+                        <p>From the given data, the locations where people are most at risk for drinking poisoned water had to be determined. There were three conditions to follow; the areas must be within 0.3 miles of a TRI facility with water pollution over 10,000 tons, within 0.3 miles of a river, and within 0.2 miles with water service lines made of lead.</p>
+                        <p>For the first condition, the standalone table must be joined with the spatial data in order to begin. Attribute selections can then be made to only select the facilities with water pollution over 10,000 tons. Using the new data, a buffer can be created 0.3 miles from one of these locations, making sure to dissolve all. </p>
+                        <p>For the second condition, all water data can be clipped so that only the water ways within Flint are visible. The only river in Flint is Flint River so we can select by attribute to only select Flint River and export that data into a new attribute table. From here a new 0.3 mile buffer can be completed.</p>
+                        <p>For the third condition, another attribute selection can be made so that only the lead is selected and exported into a new table. Another buffer can be made for 0.2 miles from any service line made of lead. </p>
+                        <p>The areas reminding show where people are most at risk of suffering from drinking poisonous water.  </p>
                         </p>
                     </div>
                 </div>
